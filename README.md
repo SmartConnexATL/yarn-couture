@@ -64,8 +64,8 @@ GitHub Actions runs CI on pull requests and pushes to `main`:
 - `npm run lint`
 - `npm run build`
 
-Production deployment is configured for Vercel on pushes to `main` and manual
-workflow runs. Add these GitHub repository secrets before enabling deployment:
+Production deployment is configured as a manual GitHub Actions workflow for
+Vercel. Add these GitHub repository secrets before running deployment:
 
 ```bash
 VERCEL_TOKEN=
@@ -84,6 +84,9 @@ NEXT_PUBLIC_SELLER_EMAIL=
 NEXT_PUBLIC_SELLER_WHATSAPP_URL=
 NEXT_PUBLIC_SELLER_SOCIAL_URL=
 ```
+
+After the Vercel project and secrets are confirmed, the deploy workflow can be
+changed to run automatically on pushes to `main`.
 
 ## V1 Scope
 
