@@ -56,6 +56,35 @@ npm run build
 npm run start
 ```
 
+## CI/CD
+
+GitHub Actions runs CI on pull requests and pushes to `main`:
+
+- `npm ci`
+- `npm run lint`
+- `npm run build`
+
+Production deployment is configured for Vercel on pushes to `main` and manual
+workflow runs. Add these GitHub repository secrets before enabling deployment:
+
+```bash
+VERCEL_TOKEN=
+VERCEL_ORG_ID=
+VERCEL_PROJECT_ID=
+```
+
+Application environment variables should be configured in Vercel:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+NEXT_PUBLIC_SITE_URL=
+NEXT_PUBLIC_SELLER_EMAIL=
+NEXT_PUBLIC_SELLER_WHATSAPP_URL=
+NEXT_PUBLIC_SELLER_SOCIAL_URL=
+```
+
 ## V1 Scope
 
 - Public product showcase
