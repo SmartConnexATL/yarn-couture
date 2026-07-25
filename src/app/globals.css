@@ -3,8 +3,30 @@
 @tailwind utilities;
 
 :root {
-  color: #251f1d;
-  background: #f8f1e8;
+  /* Tier 1 — raw palette. The only place a hex value is ever written. */
+  --color-cream: #faf5ee;
+  --color-warm-white: #fffdf9;
+  --color-royal-blue-600: #29408c;
+  --color-royal-blue-400: #3e5bb0;
+  --color-burnt-orange-600: #c1531d;
+  --color-burnt-orange-400: #d97a3f;
+  --color-ink: #1c2333;
+  --color-slate: #6b7280;
+  --color-border: #e4dcce;
+
+  /* Tier 2 — semantic roles. Components and Tailwind only reference these. */
+  --background: var(--color-cream);
+  --surface: var(--color-warm-white);
+  --foreground: var(--color-ink);
+  --muted: var(--color-slate);
+  --border: var(--color-border);
+  --primary: var(--color-royal-blue-600);
+  --primary-hover: var(--color-royal-blue-400);
+  --accent: var(--color-burnt-orange-600);
+  --accent-hover: var(--color-burnt-orange-400);
+
+  color: var(--foreground);
+  background: var(--background);
 }
 
 * {
@@ -17,10 +39,8 @@ html {
 
 body {
   margin: 0;
-  color: #251f1d;
-  background:
-    radial-gradient(circle at top left, rgba(184, 95, 72, 0.14), transparent 32rem),
-    linear-gradient(180deg, #f8f1e8 0%, #fffaf5 45%, #f4eadf 100%);
+  color: var(--foreground);
+  background: var(--background);
 }
 
 a {
@@ -36,7 +56,6 @@ select {
 }
 
 ::selection {
-  color: #fffaf5;
-  background: #b85f48;
+  color: var(--surface);
+  background: var(--accent);
 }
-
