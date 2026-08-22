@@ -32,7 +32,7 @@ export default function AboutPage() {
               Yarn Couture was born from a passion for exceptional fiber and a commitment to sustainable craftsmanship. Every skein is hand-dyed in small batches, ensuring quality and uniqueness that mass production simply cannot match.
             </p>
             <p className="text-body text-muted">
-              We believe that the materials you use matter. Our yarns are sourced from trusted suppliers who share our values of quality and responsibility. Whether you're a seasoned crochet artist or just beginning your yarn journey, we create fibers that inspire creativity.
+              We believe that the materials you use matter. Our yarns are sourced from trusted suppliers who share our values of quality and responsibility. Whether you&apos;re a seasoned crochet artist or just beginning your yarn journey, we create fibers that inspire creativity.
             </p>
           </div>
           <ImagePlaceholder
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <div className="flex flex-col gap-4">
               <h3 className="font-display text-h3 text-accent">Sustainability</h3>
               <p className="text-body text-muted">
-                We're committed to responsible sourcing and ethical production practices that respect our planet.
+                We&apos;re committed to responsible sourcing and ethical production practices that respect our planet.
               </p>
             </div>
             <div className="flex flex-col gap-4">

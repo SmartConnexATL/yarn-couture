@@ -68,7 +68,7 @@ export default function ContactPage() {
           Inquire About Our Yarns
         </h1>
         <p className="mt-6 max-w-lg text-body text-muted">
-          Have questions about our products or interested in a custom order? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+          Have questions about our products or interested in a custom order? We&apos;d love to hear from you. Fill out the form below and we&apos;ll get back to you as soon as possible.
         </p>
       </section>
 
@@ -78,7 +78,7 @@ export default function ContactPage() {
           <div className="rounded-lg border border-accent bg-surface p-8 text-center">
             <h2 className="font-display text-h2 text-foreground">Thank you!</h2>
             <p className="mt-4 text-body text-muted">
-              We've received your inquiry and will get back to you shortly.
+              We&apos;ve received your inquiry and will get back to you shortly.
             </p>
           </div>
         ) : (

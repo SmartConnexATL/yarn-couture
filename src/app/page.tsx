@@ -121,7 +121,7 @@ export default function Home() {
               Ready to Create?
             </h2>
             <p className="text-lg text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-              Whether you're looking for a specific color, interested in a custom order, or just want to chat about yarn, we'd love to hear from you.
+              Whether you&apos;re looking for a specific color, interested in a custom order, or just want to chat about yarn, we&apos;d love to hear from you.
             </p>
             <a
               href="/contact"
