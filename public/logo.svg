@@ -1,0 +1,10 @@
+<svg viewBox="0 0 280 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- "THE" text -->
+  <text x="0" y="20" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#c1531d" letter-spacing="2">THE</text>
+
+  <!-- "yarn" text - italic and larger -->
+  <text x="0" y="55" font-family="Georgia, serif" font-size="38" font-weight="700" font-style="italic" fill="#d97a3f">yarn</text>
+
+  <!-- "COUTURE" text -->
+  <text x="0" y="82" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#c1531d" letter-spacing="3">COUTURE</text>
+</svg>
