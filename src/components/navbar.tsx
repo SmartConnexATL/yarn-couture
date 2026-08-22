@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/about", label: "About" },
@@ -9,9 +10,16 @@ const navLinks = [
 export function Navbar() {
   return (
     <header className="border-b border-border">
-      <div className="mx-auto flex max-w-content items-center justify-between px-6 py-6 sm:px-10 lg:px-12">
-        <Link href="/" className="font-display text-h3 text-foreground">
-          Yarn Couture
+      <div className="mx-auto flex max-w-content items-center justify-between px-6 py-4 sm:px-10 lg:px-12">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Yarn Couture"
+            width={180}
+            height={80}
+            className="h-auto w-auto"
+            priority
+          />
         </Link>
         <nav>
           <ul className="flex items-center gap-8">
