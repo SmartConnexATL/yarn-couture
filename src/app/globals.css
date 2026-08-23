@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 :root {
-  /* Tier 1 — raw palette. The only place a hex value is ever written. */
+  /* Tier 1 — raw palette. Black & Gold luxury aesthetic */
+  --color-black: #0f0f0f;
+  --color-dark-charcoal: #1a1a1a;
   --color-cream: #faf5ee;
   --color-warm-white: #fffdf9;
-  --color-royal-blue-600: #29408c;
-  --color-royal-blue-400: #3e5bb0;
-  --color-burnt-orange-600: #c1531d;
-  --color-burnt-orange-400: #d97a3f;
-  --color-ink: #1c2333;
-  --color-slate: #6b7280;
-  --color-border: #e4dcce;
+  --color-gold: #d4af37;
+  --color-gold-dark: #b8860b;
+  --color-slate: #9ca3af;
+  --color-border: #3a3a3a;
+  --color-accent-warm: #c97f3c;
 
-  /* Tier 2 — semantic roles. Components and Tailwind only reference these. */
+  /* Tier 2 — semantic roles. */
   --background: var(--color-cream);
   --surface: var(--color-warm-white);
-  --foreground: var(--color-ink);
+  --foreground: var(--color-black);
   --muted: var(--color-slate);
   --border: var(--color-border);
-  --primary: var(--color-royal-blue-600);
-  --primary-hover: var(--color-royal-blue-400);
-  --accent: var(--color-burnt-orange-600);
-  --accent-hover: var(--color-burnt-orange-400);
+  --primary: var(--color-dark-charcoal);
+  --primary-hover: var(--color-black);
+  --accent: var(--color-gold);
+  --accent-hover: var(--color-gold-dark);
 
   color: var(--foreground);
   background: var(--background);
@@ -41,6 +41,7 @@ body {
   margin: 0;
   color: var(--foreground);
   background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 a {
@@ -58,4 +59,123 @@ select {
 ::selection {
   color: var(--surface);
   background: var(--accent);
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.5px;
+}
+
+/* Button Styling */
+button, a[role="button"] {
+  transition: all 0.3s ease;
+}
+
+/* Links & Interactive Elements */
+a {
+  transition: color 0.3s ease;
+}
+
+/* Images */
+img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover Effects */
+@media (hover: hover) {
+  img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+
+  button:hover, a[role="button"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Section Dividers */
+section {
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.4;
+}
+
+section:first-child::before {
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Text Animations */
+h1, h2, h3 {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+p {
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
