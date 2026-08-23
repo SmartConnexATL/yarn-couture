@@ -1,135 +1,82 @@
-import { ImagePlaceholder } from "@/components/image-placeholder";
-import { Eyebrow } from "@/components/eyebrow";
+import { HeroSection } from "@/components/landing/hero-section";
+import { FeaturedPieceSection } from "@/components/landing/featured-piece-section";
+import { WhyDifferentSection } from "@/components/landing/why-different-section";
+import { CatalogGridSection } from "@/components/landing/catalog-grid-section";
+import { MakerSection } from "@/components/landing/maker-section";
+import { Reveal } from "@/components/reveal";
+import { FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, PinIcon } from "@/components/icons";
 
 export default function Home() {
   return (
     <main>
-      {/* Magazine-Style Hero Section */}
-      <section className="bg-primary text-surface">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[90vh]">
-          {/* Left: Bold Typography */}
-          <div className="flex flex-col justify-center px-6 py-20 sm:px-10 lg:px-16 lg:py-0">
-            <div className="max-w-lg">
-              <p className="text-caption font-bold uppercase tracking-widest text-surface/80 mb-8">
-                Artisan Yarn Collection
-              </p>
+      <HeroSection />
+      <FeaturedPieceSection />
+      <WhyDifferentSection />
+      <CatalogGridSection />
+      <MakerSection />
 
-              <h1 className="font-display text-7xl leading-tight mb-8">
-                <span className="block">Yarn</span>
-                <span className="block text-accent">Couture</span>
-              </h1>
-
-              <p className="text-lg leading-relaxed text-surface/90 mb-12 max-w-md">
-                Hand-dyed, limited-edition art yarn for makers who demand excellence. Each collection tells a story.
+      {/* Closing contact band — no new photography required */}
+      <section id="contact" className="border-t-2 border-accent bg-surface">
+        <div className="mx-auto max-w-content px-6 py-16 sm:px-10 lg:px-16 lg:py-20">
+          <Reveal className="mb-12 flex justify-center sm:justify-start">
+            <div className="inline-flex items-center gap-3 rounded-full border border-accent bg-accent/10 px-6 py-3">
+              <PinIcon className="h-5 w-5 text-accent" strokeWidth={1.8} />
+              <p className="text-small font-bold uppercase tracking-wide text-foreground">
+                Visit our booth &mdash; September 12, 2026
               </p>
+            </div>
+          </Reveal>
+
+          <Reveal className="flex flex-col gap-10 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 className="font-display text-h2 font-bold text-foreground">
+                Let&rsquo;s Create Together
+              </h2>
+              <p className="mt-3 max-w-sm text-small text-muted">
+                Questions, custom orders, or just want to see the colors in person? Reach out.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-6 sm:items-end">
+              <div className="flex flex-col gap-2 sm:items-end">
+                <a
+                  href="mailto:itsyarncouture@gmail.com"
+                  className="flex items-center gap-2 font-bold text-foreground hover:text-accent"
+                >
+                  <MailIcon className="h-4 w-4 text-accent" />
+                  itsyarncouture@gmail.com
+                </a>
+                <a
+                  href="tel:6788029122"
+                  className="flex items-center gap-2 text-small text-muted hover:text-accent"
+                >
+                  <PhoneIcon className="h-4 w-4 text-accent" />
+                  678-802-9122
+                </a>
+              </div>
 
               <div className="flex gap-4">
                 <a
-                  href="/catalog"
-                  className="inline-block bg-surface text-primary px-8 py-4 font-semibold uppercase text-sm tracking-wide hover:bg-surface/90 transition"
+                  href="https://www.instagram.com/the_yarncouture/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-accent hover:text-accent"
                 >
-                  Shop Now
+                  <InstagramIcon />
                 </a>
                 <a
-                  href="/about"
-                  className="inline-block border-2 border-surface text-surface px-8 py-4 font-semibold uppercase text-sm tracking-wide hover:bg-surface/10 transition"
+                  href="https://www.facebook.com/profile.php?id=61590583277686"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-accent hover:text-accent"
                 >
-                  Our Story
+                  <FacebookIcon />
                 </a>
               </div>
             </div>
-          </div>
-
-          {/* Right: Large Featured Image */}
-          <ImagePlaceholder
-            label="Hero image — featured yarn collection"
-            className="min-h-[50vh] lg:min-h-full"
-          />
-        </div>
-      </section>
-
-      {/* Featured Collection Section */}
-      <section className="bg-surface border-b border-border">
-        <div className="mx-auto max-w-content px-6 py-20 sm:px-10 lg:px-16 lg:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <Eyebrow>Collection Spotlight</Eyebrow>
-              <h2 className="font-display text-5xl text-foreground mt-4 mb-8 leading-tight">
-                Crafted for Creators
-              </h2>
-              <p className="text-lg text-muted leading-relaxed mb-8">
-                Each skein is hand-dyed in small batches, ensuring exceptional color depth and uniqueness. We work with premium fibers selected for their beauty and performance.
-              </p>
-              <p className="text-lg text-muted leading-relaxed mb-10">
-                From luxury blends to experimental textures, our collections are designed for makers who refuse to compromise on quality.
-              </p>
-              <a
-                href="/catalog"
-                className="inline-block bg-accent text-surface px-8 py-4 font-semibold uppercase text-sm tracking-wide hover:bg-accent-hover transition"
-              >
-                View Collection
-              </a>
-            </div>
-
-            <ImagePlaceholder
-              label="Collection detail shot"
-              className="aspect-square"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Three-Column Feature Section */}
-      <section className="bg-primary text-surface">
-        <div className="mx-auto max-w-content px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
-          <h2 className="font-display text-5xl text-center mb-16">Why Choose Yarn Couture</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="flex flex-col gap-4">
-              <div className="text-h1 font-display text-accent">01</div>
-              <h3 className="font-display text-2xl">Premium Fibers</h3>
-              <p className="text-surface/90 leading-relaxed">
-                Sourced from trusted suppliers who share our commitment to quality and sustainability.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-4">
-              <div className="text-h1 font-display text-accent">02</div>
-              <h3 className="font-display text-2xl">Hand-Dyed</h3>
-              <p className="text-surface/90 leading-relaxed">
-                Each batch is dyed in small quantities using techniques perfected over years of craft.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-4">
-              <div className="text-h1 font-display text-accent">03</div>
-              <h3 className="font-display text-2xl">Limited Edition</h3>
-              <p className="text-surface/90 leading-relaxed">
-                Every collection is produced in small runs, ensuring your yarn is genuinely one-of-a-kind.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-content px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg p-16 text-center">
-            <Eyebrow>Get in Touch</Eyebrow>
-            <h2 className="font-display text-5xl text-foreground mt-6 mb-6">
-              Ready to Create?
-            </h2>
-            <p className="text-lg text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-              Whether you&apos;re looking for a specific color, interested in a custom order, or just want to chat about yarn, we&apos;d love to hear from you.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block bg-primary text-surface px-10 py-4 font-semibold uppercase text-sm tracking-wide hover:bg-primary/90 transition"
-            >
-              Contact Us
-            </a>
-          </div>
+          </Reveal>
         </div>
       </section>
     </main>
