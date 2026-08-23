@@ -7,6 +7,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         surface: "var(--surface)",
+        "surface-alt": "var(--surface-alt)",
         foreground: "var(--foreground)",
         muted: "var(--muted)",
         border: "var(--border)",
@@ -25,8 +26,14 @@ const config: Config = {
         mono: ["var(--font-geist-mono)", "monospace"]
       },
       fontSize: {
-        display: ["4rem", { lineHeight: "1.05", letterSpacing: "-0.01em" }],
-        h1: ["3rem", { lineHeight: "1.1", letterSpacing: "-0.01em" }],
+        display: [
+          "clamp(3rem, 3vw + 2.25rem, 6.5rem)",
+          { lineHeight: "0.95", letterSpacing: "-0.02em" }
+        ],
+        h1: [
+          "clamp(2.25rem, 1.4vw + 1.85rem, 3.75rem)",
+          { lineHeight: "1.05", letterSpacing: "-0.01em" }
+        ],
         h2: ["2.25rem", { lineHeight: "1.15" }],
         h3: ["1.5rem", { lineHeight: "1.25" }],
         body: ["1.0625rem", { lineHeight: "1.6" }],
