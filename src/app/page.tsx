@@ -58,21 +58,17 @@ export default function Home() {
               <div className="flex gap-4">
                 <a
                   href="https://www.instagram.com/the_yarncouture/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-accent hover:text-accent"
+                  className="text-muted hover:text-accent transition-colors"
+                  title="Instagram"
                 >
-                  <InstagramIcon />
+                  <InstagramIcon className="h-5 w-5" strokeWidth={1.8} />
                 </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61590583277686"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-accent hover:text-accent"
+                  href="https://www.facebook.com/the.yarncouture/"
+                  className="text-muted hover:text-accent transition-colors"
+                  title="Facebook"
                 >
-                  <FacebookIcon />
+                  <FacebookIcon className="h-5 w-5" strokeWidth={1.8} />
                 </a>
               </div>
             </div>

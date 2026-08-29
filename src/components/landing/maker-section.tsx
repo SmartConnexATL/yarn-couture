@@ -15,24 +15,28 @@ export function MakerSection() {
           <Reveal className="order-2 flex flex-col justify-center gap-6 lg:order-1">
             <div className="flex flex-col gap-4">
               <Eyebrow>Behind the Craft</Eyebrow>
-              <h2 className="font-display text-h1 font-bold text-foreground leading-tight">
+              <h2 className="font-display text-h1 font-bold leading-tight text-foreground">
                 The Maker
                 <br />
                 <span className="text-accent">Behind the Craft</span>
               </h2>
             </div>
 
-            <p className="max-w-md text-body text-muted leading-relaxed">
+            <p className="max-w-md text-body leading-relaxed text-muted">
               Yarn Couture is a one-person studio. Every piece that leaves it has been in the same pair of hands from the first stitch to the last.
             </p>
           </Reveal>
 
           <Reveal delayMs={150} className="order-1 lg:order-2">
             <ImagePlaceholder
+              src="/ycphotos/1000134288.jpg"
+              alt="Navy crocheted cape on a mannequin"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              imageClassName="object-top"
               label="MAKER PHOTO — Optional
 Hands working, holding a finished piece, or studio shot
 Portrait (2:3) or square (1:1)"
-              className="img-hover min-h-[26rem] lg:min-h-[34rem] h-full"
+              className="img-hover h-full min-h-[26rem] lg:min-h-[34rem]"
             />
           </Reveal>
         </div>

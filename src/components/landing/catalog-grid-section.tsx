@@ -9,42 +9,54 @@ const products = [
     name: "Ocean Pride",
     color: "Deep blue & silver",
     span: "lg:col-span-7",
-    aspect: "aspect-[4/5]"
+    aspect: "aspect-[4/5]",
+    src: "/ycphotos/1000134240.jpg",
+    alt: "Pink crocheted halter top on a mannequin"
   },
   {
     number: "02",
     name: "Sunset Vibes",
     color: "Terracotta & gold",
     span: "lg:col-span-5",
-    aspect: "aspect-[4/5]"
+    aspect: "aspect-[4/5]",
+    src: "/ycphotos/1000134243.jpg",
+    alt: "Purple and pink crocheted cardigan on a mannequin"
   },
   {
     number: "03",
     name: "Nature’s Call",
     color: "Sage & moss",
     span: "lg:col-span-4",
-    aspect: "aspect-square"
+    aspect: "aspect-square",
+    src: "/ycphotos/1000134242.jpg",
+    alt: "Green crocheted wrap displayed on a mannequin"
   },
   {
     number: "04",
     name: "Royal Jewels",
     color: "Emerald & violet",
     span: "lg:col-span-4",
-    aspect: "aspect-square"
+    aspect: "aspect-square",
+    src: "/ycphotos/1000134245.jpg",
+    alt: "Green crocheted cardigan shown in profile on a mannequin"
   },
   {
     number: "05",
     name: "Classic Ivory",
     color: "Soft & neutral",
     span: "lg:col-span-4",
-    aspect: "aspect-square"
+    aspect: "aspect-square",
+    src: "/ycphotos/1000134246.jpg",
+    alt: "Green crocheted cardigan shown from the back on a mannequin"
   },
   {
     number: "06",
     name: "Passion Purple",
     color: "Deep purple & burgundy",
     span: "lg:col-span-12",
-    aspect: "aspect-[16/7]"
+    aspect: "aspect-[16/7]",
+    src: "/ycphotos/1000134247.jpg",
+    alt: "Tan and green crocheted sweater on a mannequin"
   }
 ];
 
@@ -55,7 +67,7 @@ export function CatalogGridSection() {
         <Reveal className="mb-16 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <Eyebrow>The Collection</Eyebrow>
-            <h2 className="mt-4 font-display text-h1 font-bold text-foreground leading-tight">
+            <h2 className="mt-4 font-display text-h1 font-bold leading-tight text-foreground">
               Current Colorways
             </h2>
           </div>
@@ -69,14 +81,18 @@ export function CatalogGridSection() {
             <Reveal key={product.number} delayMs={(i % 3) * 100} className={product.span}>
               <a href="/catalog" className="img-hover group flex flex-col gap-4">
                 <ImagePlaceholder
-                  label={`PRODUCT PHOTO — Colorway ${product.number}\nFinished crochet/knit piece\nSquare (1:1)`}
+                  src={product.src}
+                  alt={product.alt}
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  imageClassName="object-top"
+                  label={`PRODUCT PHOTO — Colorway ${product.number}
+Finished crochet/knit piece
+Square (1:1)`}
                   className={`${product.aspect} w-full`}
                 />
                 <div className="flex items-start justify-between gap-4 border-t-2 border-foreground pt-4">
                   <div>
-                    <p className="text-caption font-bold text-accent">
-                      Colorway {product.number}
-                    </p>
+                    <p className="text-caption font-bold text-accent">Colorway {product.number}</p>
                     <h3 className="mt-1 font-display text-h3 font-bold text-foreground">
                       {product.name}
                     </h3>

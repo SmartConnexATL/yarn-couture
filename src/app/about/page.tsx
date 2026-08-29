@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-5 border-b border-border">
+      <section className="grid grid-cols-1 border-b border-border lg:grid-cols-5">
         <div className="order-2 flex flex-col justify-center gap-6 px-6 py-16 sm:px-10 lg:order-1 lg:col-span-2 lg:px-12 lg:py-24">
           <Eyebrow>Our Story</Eyebrow>
           <h1 className="max-w-md font-display text-h1 text-foreground">
@@ -16,6 +16,10 @@ export default function AboutPage() {
           </p>
         </div>
         <ImagePlaceholder
+          src="/ycphotos/1000134250.jpg"
+          alt="Coral crochet outfit on a mannequin"
+          sizes="(min-width: 1024px) 60vw, 100vw"
+          imageClassName="object-top"
           label="Yarn couture studio"
           className="order-1 min-h-[20rem] border-y-0 lg:order-2 lg:col-span-3 lg:min-h-[32rem] lg:border-l lg:border-r-0"
         />
@@ -36,6 +40,10 @@ export default function AboutPage() {
             </p>
           </div>
           <ImagePlaceholder
+            src="/ycphotos/1000134249.jpg"
+            alt="Blue crocheted cape shown from the back on a mannequin"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            imageClassName="object-top"
             label="Yarn dyed in color"
             className="min-h-[20rem] lg:min-h-[24rem]"
           />

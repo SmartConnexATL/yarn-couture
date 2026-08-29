@@ -6,37 +6,49 @@ const products = [
     id: 1,
     name: "Luxe Merino Blend",
     category: "Premium Yarn",
-    color: "Charcoal Grey"
+    color: "Charcoal Grey",
+    src: "/ycphotos/1000134240.jpg",
+    alt: "Pink crocheted halter top on a mannequin"
   },
   {
     id: 2,
     name: "Silky Cotton",
     category: "Summer Yarn",
-    color: "Cream"
+    color: "Cream",
+    src: "/ycphotos/1000134243.jpg",
+    alt: "Purple and pink crocheted cardigan on a mannequin"
   },
   {
     id: 3,
     name: "Art Yarn Special",
     category: "Textured Yarn",
-    color: "Multi-color"
+    color: "Multi-color",
+    src: "/ycphotos/1000134242.jpg",
+    alt: "Green crocheted wrap displayed on a mannequin"
   },
   {
     id: 4,
     name: "Alpaca Dreams",
     category: "Luxury Yarn",
-    color: "Blush Pink"
+    color: "Blush Pink",
+    src: "/ycphotos/1000134245.jpg",
+    alt: "Green crocheted cardigan shown in profile on a mannequin"
   },
   {
     id: 5,
     name: "Wool Comfort",
     category: "Worsted Weight",
-    color: "Deep Navy"
+    color: "Deep Navy",
+    src: "/ycphotos/1000134246.jpg",
+    alt: "Green crocheted cardigan shown from the back on a mannequin"
   },
   {
     id: 6,
     name: "Celestial Blend",
     category: "Premium Yarn",
-    color: "Starlight Silver"
+    color: "Starlight Silver",
+    src: "/ycphotos/1000134247.jpg",
+    alt: "Tan and green crocheted sweater on a mannequin"
   }
 ];
 
@@ -60,6 +72,10 @@ export default function CatalogPage() {
           {products.map((product) => (
             <div key={product.id} className="flex flex-col gap-4">
               <ImagePlaceholder
+                src={product.src}
+                alt={product.alt}
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                imageClassName="object-top"
                 label={`${product.name} yarn`}
                 className="aspect-square"
               />
