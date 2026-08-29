@@ -18,8 +18,8 @@ export function FeaturedPieceSection() {
               aria-hidden="true"
             />
             <ImagePlaceholder
-              src="/ycphotos/1000134290.jpg"
-              alt="Patchwork crochet sweater in olive, tan, and cream on a mannequin"
+              src="/ycphotos/feature_piece.png"
+              alt="Patchwork crochet sweater in pink, purple, and red on a mannequin"
               sizes="(min-width: 1024px) 50vw, 100vw"
               imageClassName="object-top"
               label="PHOTO 2 — Featured piece
@@ -44,7 +44,9 @@ Square (1:1) or portrait (2:3) — show craftsmanship, color, texture"
             </p>
 
             <p className="max-w-md text-body leading-relaxed text-muted">
-              Every stitch is worked by hand, one piece at a time — no shortcuts, no mass production. What you see is what was made, in the exact hours it took to make it.
+              Every stitch is worked by hand, one piece at a time — no
+              shortcuts, no mass production. What you see is what was made, in
+              the exact hours it took to make it.
             </p>
 
             <div>
