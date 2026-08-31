@@ -1,10 +1,14 @@
 import { HeroSection } from "@/components/landing/hero-section";
 import { FeaturedPieceSection } from "@/components/landing/featured-piece-section";
 import { WhyDifferentSection } from "@/components/landing/why-different-section";
-import { CatalogGridSection } from "@/components/landing/catalog-grid-section";
-import { MakerSection } from "@/components/landing/maker-section";
 import { Reveal } from "@/components/reveal";
-import { FacebookIcon, InstagramIcon, MailIcon, PhoneIcon, PinIcon } from "@/components/icons";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  MailIcon,
+  PhoneIcon,
+  PinIcon,
+} from "@/components/icons";
 
 export default function Home() {
   return (
@@ -12,8 +16,6 @@ export default function Home() {
       <HeroSection />
       <FeaturedPieceSection />
       <WhyDifferentSection />
-      <CatalogGridSection />
-      <MakerSection />
 
       {/* Closing contact band — no new photography required */}
       <section id="contact" className="border-t-2 border-accent bg-surface">
@@ -33,7 +35,8 @@ export default function Home() {
                 Let&rsquo;s Create Together
               </h2>
               <p className="mt-3 max-w-sm text-small text-muted">
-                Questions, custom orders, or just want to see the colors in person? Reach out.
+                Questions, custom orders, or just want to see the colors in
+                person? Reach out.
               </p>
             </div>
 
@@ -58,21 +61,17 @@ export default function Home() {
               <div className="flex gap-4">
                 <a
                   href="https://www.instagram.com/the_yarncouture/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-accent hover:text-accent"
+                  className="text-muted hover:text-accent transition-colors"
+                  title="Instagram"
                 >
-                  <InstagramIcon />
+                  <InstagramIcon className="h-5 w-5" strokeWidth={1.8} />
                 </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61590583277686"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-accent hover:text-accent"
+                  href="https://www.facebook.com/the.yarncouture/"
+                  className="text-muted hover:text-accent transition-colors"
+                  title="Facebook"
                 >
-                  <FacebookIcon />
+                  <FacebookIcon className="h-5 w-5" strokeWidth={1.8} />
                 </a>
               </div>
             </div>

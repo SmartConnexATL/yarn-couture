@@ -1,15 +1,33 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const navLinks = [
-  { href: "/about", label: "About" },
   { href: "/catalog", label: "Catalog" },
-  { href: "/contact", label: "Contact" }
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="border-b border-border">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-background/80 backdrop-blur-sm" : "bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex max-w-content items-center justify-between px-6 py-4 sm:px-10 lg:px-12">
         <Link href="/" className="flex items-center">
           <Image
@@ -27,7 +45,7 @@ export function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="link-underline text-caption font-semibold uppercase text-muted transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none focus-visible:underline"
+                  className="link-underline text-small font-semibold uppercase text-foreground transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none focus-visible:underline"
                 >
                   {link.label}
                 </Link>
