@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { href: "/about", label: "About" },
   { href: "/catalog", label: "Catalog" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -25,9 +25,7 @@ export function Navbar() {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-sm"
-          : "bg-transparent"
+        isScrolled ? "bg-background/80 backdrop-blur-sm" : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-content items-center justify-between px-6 py-4 sm:px-10 lg:px-12">

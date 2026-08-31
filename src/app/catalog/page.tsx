@@ -1,112 +1,136 @@
 import { Eyebrow } from "@/components/eyebrow";
-import { ImagePlaceholder } from "@/components/image-placeholder";
+import { PhotoCard } from "@/components/photo-card";
 
-const products = [
+const photos = [
   {
-    id: 1,
-    name: "Luxe Merino Blend",
-    category: "Premium Yarn",
-    color: "Charcoal Grey",
+    id: "1",
     src: "/ycphotos/1000134240.jpg",
-    alt: "Pink crocheted halter top on a mannequin"
+    alt: "Pink crocheted halter top",
+    imageClassName: "object-[50%_5%]",
   },
   {
-    id: 2,
-    name: "Silky Cotton",
-    category: "Summer Yarn",
-    color: "Cream",
-    src: "/ycphotos/1000134243.jpg",
-    alt: "Purple and pink crocheted cardigan on a mannequin"
+    id: "2",
+    src: "/ycphotos/1000134241.jpg",
+    alt: "Crocheted piece detail",
+    imageClassName: "object-[50%_0%]",
   },
   {
-    id: 3,
-    name: "Art Yarn Special",
-    category: "Textured Yarn",
-    color: "Multi-color",
+    id: "3",
     src: "/ycphotos/1000134242.jpg",
-    alt: "Green crocheted wrap displayed on a mannequin"
+    alt: "Green crocheted wrap",
+    imageClassName: "object-[50%_20%]",
   },
   {
-    id: 4,
-    name: "Alpaca Dreams",
-    category: "Luxury Yarn",
-    color: "Blush Pink",
+    id: "4",
+    src: "/ycphotos/1000134243.jpg",
+    alt: "Green crocheted open cardigan",
+    imageClassName: "object-[50%_15%]",
+  },
+  {
+    id: "5",
+    src: "/ycphotos/1000134244.jpg",
+    alt: "Crocheted design",
+    imageClassName: "object-[50%_25%]",
+  },
+  {
+    id: "6",
     src: "/ycphotos/1000134245.jpg",
-    alt: "Green crocheted cardigan shown in profile on a mannequin"
+    alt: "Green crocheted cardigan profile",
+    imageClassName: "object-[50%_25%]",
   },
   {
-    id: 5,
-    name: "Wool Comfort",
-    category: "Worsted Weight",
-    color: "Deep Navy",
+    id: "7",
     src: "/ycphotos/1000134246.jpg",
-    alt: "Green crocheted cardigan shown from the back on a mannequin"
+    alt: "Tan crocheted cardigan back view",
+    imageClassName: "object-[50%_15%]",
   },
   {
-    id: 6,
-    name: "Celestial Blend",
-    category: "Premium Yarn",
-    color: "Starlight Silver",
+    id: "8",
     src: "/ycphotos/1000134247.jpg",
-    alt: "Tan and green crocheted sweater on a mannequin"
-  }
+    alt: "Tan and green crocheted sweater",
+    imageClassName: "object-[50%_15%]",
+  },
+  {
+    id: "9",
+    src: "/ycphotos/1000134248.jpg",
+    alt: "Crocheted piece",
+    imageClassName: "object-[50%_20%]",
+  },
+  {
+    id: "10",
+    src: "/ycphotos/1000134249.jpg",
+    alt: "Crocheted work",
+    imageClassName: "object-[50%_5%]",
+  },
+  {
+    id: "11",
+    src: "/ycphotos/1000134250.jpg",
+    alt: "Detailed crochet",
+    imageClassName: "object-[50%_10%]",
+  },
+  {
+    id: "12",
+    src: "/ycphotos/1000134286.jpg",
+    alt: "Crochet artwork",
+  },
+  {
+    id: "13",
+    src: "/ycphotos/1000134288.jpg",
+    alt: "Handmade crochet piece",
+    imageClassName: "object-[50%_10%]",
+  },
+  {
+    id: "14",
+    src: "/ycphotos/1000134290.jpg",
+    alt: "Finished crochet work",
+    imageClassName: "object-[50%_60%]",
+  },
 ];
 
 export default function CatalogPage() {
   return (
     <main>
       {/* Header Section */}
-      <section className="mx-auto max-w-content px-6 py-16 sm:px-10 lg:px-12 lg:py-24">
+      <section className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-12 lg:py-24">
         <Eyebrow>Collection</Eyebrow>
         <h1 className="mt-4 max-w-2xl font-display text-h1 text-foreground">
-          Our Yarn Selection
+          Our Work
         </h1>
         <p className="mt-6 max-w-lg text-body text-muted">
-          Hand-dyed and curated for the discerning maker. Each collection is a celebration of color, texture, and craft.
+          A curated collection of hand-crafted crochet pieces. Click on any
+          photo to explore the details.
         </p>
       </section>
 
-      {/* Products Grid */}
-      <section className="mx-auto max-w-content px-6 sm:px-10 lg:px-12 lg:pb-24">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
-            <div key={product.id} className="flex flex-col gap-4">
-              <ImagePlaceholder
-                src={product.src}
-                alt={product.alt}
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                imageClassName="object-top"
-                label={`${product.name} yarn`}
-                className="aspect-square"
-              />
-              <div className="flex flex-col gap-2">
-                <p className="text-caption font-semibold uppercase text-accent">
-                  {product.category}
-                </p>
-                <h3 className="font-display text-h3 text-foreground">
-                  {product.name}
-                </h3>
-                <p className="text-small text-muted">{product.color}</p>
-              </div>
-            </div>
+      {/* Photo Gallery */}
+      <section className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12 lg:pb-24">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+          {photos.map((photo) => (
+            <PhotoCard
+              key={photo.id}
+              src={photo.src}
+              alt={photo.alt}
+              imageClassName={photo.imageClassName}
+            />
           ))}
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="border-t border-border bg-surface">
-        <div className="mx-auto max-w-content px-6 py-16 text-center sm:px-10 lg:px-12 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 py-16 text-center sm:px-10 lg:px-12 lg:py-24">
           <h2 className="mx-auto max-w-2xl font-display text-h2 text-foreground">
-            Interested in our yarns?
+            Interested in commissioning a piece?
           </h2>
-          <p className="mx-auto mt-6 max-w-lg text-body text-muted">
-            Get in touch to place an order or inquire about custom color commissions.
+          <p className="mt-6 mx-auto max-w-lg text-body text-muted">
+            Each piece is made to order with the finest materials. Reach out to
+            discuss your vision.
           </p>
           <a
             href="/contact"
-            className="mt-8 inline-block rounded-sm bg-primary px-8 py-3 font-semibold uppercase text-surface transition-colors hover:bg-primary/90"
+            className="mt-8 inline-block rounded-md bg-foreground px-8 py-3 font-semibold text-surface hover:bg-foreground/90 transition-colors"
           >
-            Contact Us
+            Get in Touch
           </a>
         </div>
       </section>
