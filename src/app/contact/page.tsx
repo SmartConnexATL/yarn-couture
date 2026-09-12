@@ -17,9 +17,9 @@ export default function ContactPage() {
       {/* Form Section */}
       <section className="mx-auto max-w-2xl px-6 sm:px-10 lg:px-12 lg:pb-24">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSe6vKOhCz7g4NY7R7AGoGXUsX9xU_O2JXlSft5x3iNPKSdM0A/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeJQvtysm5lfWU_HNEAI5yxaZI7ujsgQ4j2lYmw_O8nymh32A/viewform?embedded=true"
           width="100%"
-          height={1350}
+          height={1224}
           frameBorder={0}
           marginHeight={0}
           marginWidth={0}
