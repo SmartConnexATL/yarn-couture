@@ -32,11 +32,6 @@ export default function AboutPage() {
               <br />
               <span className="italic text-accent">made with love.</span>
             </h1>
-            <p className="max-w-sm text-body text-muted">
-              Yarn Couture began around a coffee table, two hooks, and a
-              basket of yarn, and grew into a small studio devoted to color,
-              texture, and the slow joy of making something by hand.
-            </p>
           </div>
           <div className="relative lg:col-span-7">
             <div className="relative rotate-1 border-[10px] border-surface bg-surface shadow-2xl transition-transform duration-500 hover:rotate-0">
