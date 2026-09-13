@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import { Eyebrow } from "@/components/eyebrow";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with The Yarn Couture for questions, custom crochet orders, or collaboration inquiries.",
+  alternates: {
+    canonical: "/contact"
+  }
+};
 
 export default function ContactPage() {
   return (
