@@ -6,25 +6,25 @@ import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"]
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"]
+  subsets: ["latin"],
 });
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["500", "600", "700", "900"]
+  weight: ["500", "600", "700", "900"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: `${siteName} | Handmade Crochet Fashion`,
-    template: `%s | ${siteName}`
+    template: `%s | ${siteName}`,
   },
   description: siteDescription,
   keywords: [
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     "crochet clothing",
     "custom crochet garments",
     "crochet accessories",
-    "The Yarn Couture"
+    "The Yarn Couture",
   ],
   alternates: {
-    canonical: "/"
+    canonical: "/",
   },
   openGraph: {
     type: "website",
@@ -48,24 +48,24 @@ export const metadata: Metadata = {
         url: "/ycphotos/hero_photo.jpg",
         width: 1264,
         height: 842,
-        alt: "Handmade crochet pieces by The Yarn Couture"
-      }
-    ]
+        alt: "Handmade crochet pieces by The Yarn Couture",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteName} | Handmade Crochet Fashion`,
     description: siteDescription,
-    images: ["/ycphotos/hero_photo.jpg"]
+    images: ["/ycphotos/hero_photo.jpg"],
   },
   icons: {
     icon: "/logo.svg",
-    apple: "/logo.png"
+    apple: "/logo.png",
   },
   robots: {
     index: true,
-    follow: true
-  }
+    follow: true,
+  },
 };
 
 const organizationJsonLd = {
@@ -78,11 +78,11 @@ const organizationJsonLd = {
   description: siteDescription,
   email: siteContact.email,
   telephone: siteContact.phone,
-  sameAs: [siteContact.instagram, siteContact.facebook]
+  sameAs: [siteContact.instagram, siteContact.facebook],
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -93,7 +93,9 @@ export default function RootLayout({
       >
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
         />
         <Navbar />
         {children}
