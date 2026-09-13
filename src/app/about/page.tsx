@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Eyebrow } from "@/components/eyebrow";
+
+export const metadata: Metadata = {
+  title: "Our Story",
+  description:
+    "Meet Alberta and Christine, the mother-daughter duo behind The Yarn Couture, creating handmade crochet fashion rooted in quality, sustainability, and creativity.",
+  alternates: {
+    canonical: "/about"
+  }
+};
 
 const values = [
   {

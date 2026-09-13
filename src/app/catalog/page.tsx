@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { Eyebrow } from "@/components/eyebrow";
 import { PhotoCard } from "@/components/photo-card";
+
+export const metadata: Metadata = {
+  title: "Our Work",
+  description:
+    "Browse our curated collection of handmade crochet garments and accessories, each piece crafted with premium yarn and made to order.",
+  alternates: {
+    canonical: "/catalog"
+  }
+};
 
 const photos = [
   {

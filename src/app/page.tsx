@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/landing/hero-section";
 import { FeaturedPieceSection } from "@/components/landing/featured-piece-section";
 import { WhyDifferentSection } from "@/components/landing/why-different-section";
@@ -9,6 +10,12 @@ import {
   PhoneIcon,
   PinIcon,
 } from "@/components/icons";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/"
+  }
+};
 
 export default function Home() {
   return (
