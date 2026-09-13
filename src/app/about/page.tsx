@@ -66,23 +66,37 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-5 lg:gap-12">
           <div className="flex flex-col gap-6 lg:col-span-3">
             <h2 className="font-display text-h2 text-foreground">
-              The Art of Yarn
+              A Mother &amp; Daughter Creative Journey
             </h2>
             <p className="text-body text-muted [&::first-letter]:float-left [&::first-letter]:mr-3 [&::first-letter]:font-display [&::first-letter]:text-6xl [&::first-letter]:leading-[0.8] [&::first-letter]:text-accent">
-              Yarn Couture was born from a passion for exceptional fiber and a
-              commitment to sustainable craftsmanship. Every piece is
-              hand-crocheted in small batches, ensuring quality and
-              uniqueness that mass production simply cannot match.
+              Alberta discovered her passion for crochet at the age of nine.
+              From an early age, she developed not only a love for creating
+              with her hands, but also an entrepreneurial spirit. Her
+              creativity continued to grow through her enjoyment of both
+              crocheting and knitting, along with her passion for designing
+              and creating new garments.
             </p>
             <p className="text-body text-muted">
-              We believe that the materials you use matter. Our yarns are
-              sourced from trusted suppliers who share our values of quality
-              and responsibility. Whether you&apos;re a seasoned crochet
-              artist or just beginning your yarn journey, we create fibers
-              that inspire creativity.
+              Christine, Alberta&apos;s daughter, developed her own passion
+              for fashion at an early age, aspiring to become a fashion
+              designer. In 2016, Christine began her crochet journey by
+              creating cultural-inspired bikinis, combining her love for
+              fashion with handmade craftsmanship. Over the years, her
+              creativity evolved into designing wearable garments and
+              accessories for every season.
+            </p>
+            <p className="text-body text-muted">
+              Together, mother and daughter joined their talents, creativity,
+              and love for handmade fashion to create The Yarn Couture. Their
+              combined passion for crochet, knitting, and garment design
+              allows them to create unique pieces that celebrate
+              individuality, creativity, and the artistry of handmade
+              fashion.
             </p>
             <p className="relative mt-4 max-w-md font-display text-h3 italic leading-snug text-foreground before:absolute before:-left-3 before:-top-8 before:font-display before:text-[4rem] before:text-accent/40 before:content-['“']">
-              Every piece carries the warmth of the hands that made it.
+              What began as individual creative journeys became a shared
+              vision—wearable art made with purpose, passion, and
+              craftsmanship.
             </p>
           </div>
           <div className="relative mx-auto w-full max-w-xs lg:col-span-2 lg:max-w-none lg:justify-self-end">
