@@ -5,18 +5,18 @@ const values = [
   {
     title: "Quality",
     description:
-      "Each batch is hand-crafted with meticulous attention to detail, ensuring vibrant colors and exceptional texture."
+      "Each batch is hand-crafted with meticulous attention to detail, ensuring vibrant colors and exceptional texture.",
   },
   {
     title: "Sustainability",
     description:
-      "We're committed to responsible sourcing and ethical production practices that respect our planet."
+      "We're committed to responsible sourcing and ethical production practices that respect our planet.",
   },
   {
     title: "Creativity",
     description:
-      "We inspire makers by providing premium materials that bring their creative visions to life."
-  }
+      "We inspire makers by providing premium materials that bring their creative visions to life.",
+  },
 ];
 
 export default function AboutPage() {
@@ -28,39 +28,36 @@ export default function AboutPage() {
           <div className="flex flex-col gap-6 lg:col-span-7">
             <Eyebrow>Our Story</Eyebrow>
             <h1 className="font-display text-h1 text-foreground">
-              Made by hand,
+              A Mother & Daughter
               <br />
-              <span className="italic text-accent">made with love.</span>
+              <span className="italic text-accent">Creative Journey</span>
             </h1>
             <p className="text-body text-muted [&::first-letter]:float-left [&::first-letter]:mr-3 [&::first-letter]:font-display [&::first-letter]:text-6xl [&::first-letter]:leading-[0.8] [&::first-letter]:text-accent">
               Alberta discovered her passion for crochet at the age of nine.
-              From an early age, she developed not only a love for creating
-              with her hands, but also an entrepreneurial spirit. Her
-              creativity continued to grow through her enjoyment of both
-              crocheting and knitting, along with her passion for designing
-              and creating new garments.
+              From an early age, she developed not only a love for creating with
+              her hands, but also an entrepreneurial spirit. Her creativity
+              continued to grow through her enjoyment of both crocheting and
+              knitting, along with her passion for designing and creating new
+              garments.
             </p>
             <p className="text-body text-muted">
-              Christine, Alberta&apos;s daughter, developed her own passion
-              for fashion at an early age, aspiring to become a fashion
-              designer. In 2016, Christine began her crochet journey by
-              creating cultural-inspired bikinis, combining her love for
-              fashion with handmade craftsmanship. Over the years, her
-              creativity evolved into designing wearable garments and
-              accessories for every season.
+              Christine, Alberta&apos;s daughter, developed her own passion for
+              fashion at an early age, aspiring to become a fashion designer. In
+              2016, Christine began her crochet journey by creating
+              cultural-inspired bikinis, combining her love for fashion with
+              handmade craftsmanship. Over the years, her creativity evolved
+              into designing wearable garments and accessories for every season.
             </p>
             <p className="text-body text-muted">
               Together, mother and daughter joined their talents, creativity,
               and love for handmade fashion to create The Yarn Couture. Their
-              combined passion for crochet, knitting, and garment design
-              allows them to create unique pieces that celebrate
-              individuality, creativity, and the artistry of handmade
-              fashion.
+              combined passion for crochet, knitting, and garment design allows
+              them to create unique pieces that celebrate individuality,
+              creativity, and the artistry of handmade fashion.
             </p>
-            <p className="relative mt-4 max-w-md font-display text-h3 italic leading-snug text-foreground before:absolute before:-left-3 before:-top-8 before:font-display before:text-[4rem] before:text-accent/40 before:content-['“']">
+            <p className="relative mt-4 max-w-md font-display text-h3 italic leading-snug text-foreground before:absolute before:-left-3 before:-top-8 before:font-display before:text-[4rem] before:text-accent/40 ">
               What began as individual creative journeys became a shared
-              vision—wearable art made with purpose, passion, and
-              craftsmanship.
+              vision—wearable art made with purpose, passion, and craftsmanship.
             </p>
           </div>
           <div className="relative lg:col-span-5">
@@ -138,8 +135,8 @@ export default function AboutPage() {
             Ready to see the collection?
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-body text-muted">
-            Every piece is made to order with the finest materials, one skein
-            at a time.
+            Every piece is made to order with the finest materials, one skein at
+            a time.
           </p>
           <a
             href="/catalog"
