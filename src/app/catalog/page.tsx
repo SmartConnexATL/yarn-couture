@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description:
     "Browse our curated collection of handmade crochet garments and accessories, each piece crafted with premium yarn and made to order.",
   alternates: {
-    canonical: "/catalog"
-  }
+    canonical: "/catalog",
+  },
 };
 
 const photos = [
@@ -80,7 +80,7 @@ const photos = [
   },
   {
     id: "12",
-    src: "/ycphotos/1000134286.jpg",
+    src: "/ycphotos/1000075896.jpg",
     alt: "Crochet artwork",
   },
   {
