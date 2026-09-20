@@ -19,7 +19,7 @@ export function PhotoCard({
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="group relative overflow-hidden cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 h-full"
+        className="group relative w-full overflow-hidden cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 h-full"
       >
         {/* Artsy Border Container */}
         <div className="relative w-full h-96 border-4 border-amber-900/30 p-7 bg-amber-50/10 hover:bg-amber-50/20 transition-colors duration-300">
