@@ -22,7 +22,7 @@ const points = [
     copy: "Colorways and designs drawn from nations, sports, and the stories people carry.",
     image:
       "PHOTO 3B — Inspired by Culture\nCulture-inspired piece or colorful collection\nSquare (1:1)",
-    src: "/ycphotos/1000134286.jpg",
+    src: "/ycphotos/1000075896.jpg",
     alt: "Coral and magenta crocheted top with multicolor stitching on a mannequin",
     aspect: "aspect-square",
     offset: "lg:mt-16",
